@@ -44,9 +44,9 @@ modules:
         size: 40265918
         # https://downloads.nomachine.com/download/?id=86&distro=ARM
       - type: file
-        path: com.nomachine.nxplayer.png
+        path: data/com.nomachine.nxplayer.png
       - type: file
-        path: com.nomachine.nxplayer.desktop
+        path: data/com.nomachine.nxplayer.desktop
       - type: file
         path: com.nomachine.nxplayer.metainfo.xml
       - type: script
