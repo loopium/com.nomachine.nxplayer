@@ -30,19 +30,19 @@ modules:
       - type: extra-data
         only-arches:
           - x86_64
-        url: https://download.nomachine.com/download/8.11/Linux/nomachine-enterprise-client_8.11.3_4_x86_64.tar.gz
-        sha256: 05ae24cdbca3fcc6e545ea2a3f2060f670e10ff30fefa4ff753f83ed43f89c81
+        url: https://download.nomachine.com/download/8.13/Linux/nomachine-enterprise-client_8.13.1_1_x86_64.tar.gz
+        sha256: a44f8cbfc77de8c4060e78c51c8313c4d44cbc8af0a124d7c88fefcd5a555af2
         filename: nomachine-enterprise-client.tar.gz
-        size: 150559
-        # https://downloads.nomachine.com/download/?id=15
+        size: 45567372
+        # https://downloads.nomachine.com/
       - type: extra-data
         only-arches:
           - aarch64
-        url: https://download.nomachine.com/download/8.11/Arm/nomachine-enterprise-client_8.11.3_3_aarch64.tar.gz
-        sha256: 05ae24cdbca3fcc6e545ea2a3f2060f670e10ff30fefa4ff753f83ed43f89c81
+        url: https://download.nomachine.com/download/8.13/Arm/nomachine-enterprise-client_8.13.1_1_aarch64.tar.gz
+        sha256: f6b65100c114dd42599d95a60fe183d68e7c073ece3569893b2d82a5a9241c66
         filename: nomachine-enterprise-client.tar.gz
-        size: 150559
-        # https://downloads.nomachine.com/download/?id=86&distro=ARM
+        size: 41541017
+        # https://downloads.nomachine.com/
       - type: file
         path: data/com.nomachine.nxplayer.png
       - type: file
@@ -58,4 +58,4 @@ modules:
       - type: script
         dest-filename: launch_nxplayer
         commands:
-          - exec /app/extra/NX/bin/nxplayer "$@"
+          - exec /app/extra/NX/nxclient "$@"
