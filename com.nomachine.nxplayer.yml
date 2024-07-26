@@ -58,4 +58,4 @@ modules:
       - type: script
         dest-filename: launch_nxplayer
         commands:
-          - exec /app/extra/NX/nxclient "$@"
+          - exec /app/extra/NX/bin/nxplayer "$@"
